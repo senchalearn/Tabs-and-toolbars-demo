@@ -45,6 +45,19 @@
         ]
     };
 
+    var mixedTextButtons = {
+        xtype: 'toolbar',
+        dock: 'bottom',
+        items: [
+            { text: 'action',   ui: 'action-round' },
+            { text: 'action',   ui: 'action-small' },
+            { text: 'confirm',  ui: 'confirm-round' },
+            { text: 'confirm',  ui: 'confirm-small' },
+            { text: 'decline',  ui: 'decline-round' },
+            { text: 'decline',  ui: 'decline-small' },
+        ]
+    };
+
     ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         title: "action",
         iconCls: "action",
@@ -53,7 +66,8 @@
         dockedItems: [
             topbar,
             textButtonShapes,
-            textButtonColors
+            textButtonColors,
+            mixedTextButtons
         ]
     });
 
