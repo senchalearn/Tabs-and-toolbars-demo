@@ -8,11 +8,20 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         title: "Buttons",
         items: [
             {
-                text: 'clear'
+                text: 'clear',
+                handler: function() {
+                    ToolbarDemo.views.homecard.tab.setBadge("");
+                }
             },
             { xtype: 'spacer' },
             {
-                text: 'ping'
+                text: 'ping',
+                handler: function() {
+                    var hometab = ToolbarDemo.views.homecard.tab,
+                        badgenumber = parseInt(hometab.badgeText),
+                        nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
+                    hometab.setBadge(nextnumber);
+                }
             }
         ]
     }]
