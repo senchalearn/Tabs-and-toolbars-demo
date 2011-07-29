@@ -15,19 +15,25 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
 
     items: [
         {
-            title: "Home"
+            title: "Home",
+            iconCls: "home",
+            badgeText: "1"
         },
         {
-            title: "Search"
+            title: "Search",
+            iconCls: "search"
         },
         {
-            title: "Action"
+            title: "Action",
+            iconCls: "action"
         },
         {
-            title: "Settings"
+            title: "Settings",
+            iconCls: "settings"
         },
         {
-            title: "More"
+            title: "More",
+            iconCls: "more"
         },
     ]
 });
