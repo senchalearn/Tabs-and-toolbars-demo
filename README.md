@@ -2,15 +2,15 @@ This Git repository includes all of the source code used in creating a tutorial 
 
 The tutorial includes several checkpoints:
 
-* [Blank slate](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/00_blank_slate)
-* [Create user interface using bottom-docked tab bar](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/01_create_bottom_tabs)
-* [Break each card out into it's own file](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/02_make_each_card_a_view)
-* [Specialize the behavior for individual cards](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/03_make_each_card_specialize)
-* [Add a toolbar with title to each card](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/04_add_a_toolbar_to_each_card)
-* [Add 'ping' and 'clear' buttons, which update badge text on home tab button](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/05_add_buttons_to_top_toolbar)
-* [Demonstrate different styles of text buttons](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/06_create_text_buttons)
-* [Demonstrate how to use an icon in a button](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/07_create_icon_buttons)
-* [Tidy up](https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/08_refactor_complex_types)
+* [Blank slate][00]
+* [Create user interface using bottom-docked tab bar][01]
+* [Break each card out into it's own file][02]
+* [Specialize the behavior for individual cards][03]
+* [Add a toolbar with title to each card][04]
+* [Add 'ping' and 'clear' buttons, which update badge text on home tab button][05]
+* [Demonstrate different styles of text buttons][06]
+* [Demonstrate how to use an icon in a button][07]
+* [Tidy up][08]
 
 # Using this repository to follow the screencast
 
@@ -41,3 +41,12 @@ You can try out the demo here:
 * [http://senchalearn.github.com/Tabs-and-toolbars-demo/][t]
 
 [t]: http://senchalearn.github.com/Tabs-and-toolbars-demo/
+[00]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/00_blank_slate
+[01]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/01_create_bottom_tabs
+[02]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/02_make_each_card_a_view
+[03]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/03_make_each_card_specialize
+[04]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/04_add_a_toolbar_to_each_card
+[05]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/05_add_buttons_to_top_toolbar
+[06]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/06_create_text_buttons
+[07]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/07_create_icon_buttons
+[08]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/08_refactor_complex_types
