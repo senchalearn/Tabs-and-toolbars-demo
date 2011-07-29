@@ -5,7 +5,16 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
     html: "placeholder text",
     dockedItems: [{
         xtype: "toolbar",
-        title: "Buttons"
+        title: "Buttons",
+        items: [
+            {
+                text: 'clear'
+            },
+            { xtype: 'spacer' },
+            {
+                text: 'ping'
+            }
+        ]
     }]
 });
 
