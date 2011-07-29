@@ -34,6 +34,17 @@
         ]
     };
 
+    var textButtonColors = {
+        xtype: 'toolbar',
+        dock: 'bottom',
+        items: [
+            { text: 'normal' },
+            { text: 'action',   ui: 'action' },
+            { text: 'confirm',  ui: 'confirm' },
+            { text: 'decline',  ui: 'decline' },
+        ]
+    };
+
     ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         title: "action",
         iconCls: "action",
@@ -41,7 +52,8 @@
         html: "placeholder text",
         dockedItems: [
             topbar,
-            textButtonShapes
+            textButtonShapes,
+            textButtonColors
         ]
     });
 
