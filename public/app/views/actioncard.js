@@ -22,12 +22,27 @@
         ]
     };
 
+    var textButtonShapes = {
+        xtype: "toolbar",
+        dock: 'bottom',
+        items: [
+            { text: 'back',     ui: 'back' },
+            { text: 'normal',   ui: 'normal' },
+            { text: 'small',    ui: 'small' },
+            { text: 'round',    ui: 'round' },
+            { text: 'forward',  ui: 'forward' },
+        ]
+    };
+
     ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
         title: "action",
         iconCls: "action",
         styleHtmlContent: true,
         html: "placeholder text",
-        dockedItems: [topbar]
+        dockedItems: [
+            topbar,
+            textButtonShapes
+        ]
     });
 
     Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
