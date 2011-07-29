@@ -38,6 +38,6 @@ By default, the git clone command will only create the master branch locally. If
 
 You can try out the demo here:
 
-* [http://sencha-tabs.heroku.com/][t]
+* [http://senchalearn.github.com/Tabs-and-toolbars-demo/][t]
 
-[t]: http://sencha-tabs.heroku.com/
+[t]: http://senchalearn.github.com/Tabs-and-toolbars-demo/
