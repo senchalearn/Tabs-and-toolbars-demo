@@ -4,14 +4,14 @@
         title: "Buttons",
         items: [
             {
-                text: "clear",
+                iconCls: 'delete',  iconMask: true, ui: "plain",
                 handler: function() {
                     ToolbarDemo.views.homecard.tab.setBadge("");
                 }
             },
             { xtype: 'spacer' },
             {
-                text: "ping",
+                iconCls: 'star',  iconMask: true, ui: "plain",
                 handler: function() {
                     var hometab = ToolbarDemo.views.homecard.tab,
                         badgenumber = parseInt(hometab.badgeText),
