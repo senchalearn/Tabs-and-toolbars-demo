@@ -1,21 +1,17 @@
-ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
-    title: "action",
-    iconCls: "action",
-    styleHtmlContent: true,
-    html: "placeholder text",
-    dockedItems: [{
+(function() {
+    var topbar = {
         xtype: "toolbar",
         title: "Buttons",
         items: [
             {
-                text: 'clear',
+                text: "clear",
                 handler: function() {
                     ToolbarDemo.views.homecard.tab.setBadge("");
                 }
             },
             { xtype: 'spacer' },
             {
-                text: 'ping',
+                text: "ping",
                 handler: function() {
                     var hometab = ToolbarDemo.views.homecard.tab,
                         badgenumber = parseInt(hometab.badgeText),
@@ -24,7 +20,16 @@ ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
                 }
             }
         ]
-    }]
-});
+    };
 
-Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
+    ToolbarDemo.views.Actioncard = Ext.extend(Ext.Panel, {
+        title: "action",
+        iconCls: "action",
+        styleHtmlContent: true,
+        html: "placeholder text",
+        dockedItems: [topbar]
+    });
+
+    Ext.reg('actioncard', ToolbarDemo.views.Actioncard);
+
+})();
