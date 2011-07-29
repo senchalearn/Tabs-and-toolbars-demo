@@ -9,7 +9,7 @@ ToolbarDemo.views.Viewport = Ext.extend(Ext.TabPanel, {
     },
 
     items: [
-        { xtype: 'homecard' },
+        { xtype: 'homecard', id: 'home' },
         { xtype: 'searchcard' },
         { xtype: 'actioncard' },
         { xtype: 'settingscard' },
