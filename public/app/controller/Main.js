@@ -6,11 +6,11 @@ Ext.define('ToolbarDemo.controller.Main', {
             ':slug': 'showCard'
         },
         refs: {
-            mainPanel: 'mainview',
-            tabButtons: 'mainview tabbar[docked=bottom] button',
+            mainPanel:     'mainview',
+            tabButtons:    'mainview tabbar[docked=bottom] button',
             homeTabButton: 'mainview tabbar[docked=bottom] button[title=home]',
-            clearButton: 'button[action=clear]',
-            starButton: 'button[action=ping]'
+            clearButton:   'button[action=clear]',
+            starButton:    'button[action=ping]'
         },
         control: {
             clearButton: {
