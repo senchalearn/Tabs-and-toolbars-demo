@@ -16,13 +16,15 @@ Ext.define('ToolbarDemo.view.Actioncard', {
                 items: [{
                     iconCls: 'delete',
                     iconMask: true,
-                    ui: "plain"
+                    ui: "plain",
+                    action: 'clear'
                 }, {
                     xtype: 'spacer'
                 }, {
                     iconCls: 'star',
                     iconMask: true,
                     ui: "plain",
+                    action: 'ping'
                 }]
             },{
                 docked: 'bottom',
