@@ -7,8 +7,8 @@ Ext.define('ToolbarDemo.controller.Main', {
         },
         refs: {
             mainPanel:     'mainview',
-            tabButtons:    'mainview tabbar[docked=bottom] button',
-            homeTabButton: 'mainview tabbar[docked=bottom] button[title=home]',
+            tabButtons:    'tabbar[docked=bottom] button',
+            homeTabButton: 'tabbar[docked=bottom] button[title=home]',
             clearButton:   'button[action=clear]',
             starButton:    'button[action=ping]'
         },
