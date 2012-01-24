@@ -4,7 +4,7 @@ Ext.application({
     name: 'ToolbarDemo',
     
     controllers: ['Main'],
-    views: ['Main', 'Homecard'],
+    views: ['Main', 'Homecard', 'Searchcard'],
     
     launch: function() {
         Ext.Viewport.add({

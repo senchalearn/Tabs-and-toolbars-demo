@@ -11,7 +11,7 @@ Ext.define('ToolbarDemo.view.Main', {
         },
         items: [
             { xtype: 'homecard' },
-            // { xtype: 'searchcard' },
+            { xtype: 'searchcard' },
             // { xtype: 'actioncard' },
             // { xtype: 'settingscard' },
             // { xtype: 'morecard' }
