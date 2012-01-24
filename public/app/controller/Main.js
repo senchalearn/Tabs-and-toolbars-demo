@@ -18,6 +18,9 @@ Ext.define('ToolbarDemo.controller.Main', {
             },
             starButton: {
                 tap: 'pingHomeBadge'
+            },
+            tabButtons: {
+                tap: 'changeTab'
             }
         }
     },
@@ -36,6 +39,16 @@ Ext.define('ToolbarDemo.controller.Main', {
 
     showCard: function(index) {
         this.getMainPanel().setActiveItem(parseInt(index))
+    },
+
+    changeTab: function(button, event, object) {
+        addresses = {
+            home:    0,
+            search:  1,
+            action:  2,
+        }
+        index = addresses[button.getTitle()];
+        window.location.hash = "#card/" + index;
     }
 
 });
