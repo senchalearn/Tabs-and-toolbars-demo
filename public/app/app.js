@@ -1,8 +1,14 @@
-ToolbarDemo = new Ext.Application({
-    name: "ToolbarDemo",
+Ext.Loader.setConfig({enabled: true});
 
+Ext.application({
+    name: 'ToolbarDemo',
+    
+    controllers: ['Main'],
+    views: ['Main', 'Homecard'],
+    
     launch: function() {
-        this.views.viewport = new this.views.Viewport();
-        this.views.homecard = this.views.viewport.getComponent('home');
+        Ext.Viewport.add({
+            xclass: 'ToolbarDemo.view.Main'
+        });
     }
 });
