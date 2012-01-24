@@ -3,6 +3,9 @@ Ext.define('ToolbarDemo.controller.Main', {
 
     config: {
         refs: {
+            mainPanel: 'mainview',
+            tabButtons: 'mainview tabbar[docked=bottom] button',
+            homeTabButton: 'mainview tabbar[docked=bottom] button[title=home]',
             clearButton: 'button[action=clear]',
             starButton: 'button[action=ping]'
         },
@@ -17,11 +20,15 @@ Ext.define('ToolbarDemo.controller.Main', {
     },
 
     clearHomeBadge: function() {
-        console.log('clear!');
+        this.getHomeTabButton().setBadgeText("");
     },
 
     pingHomeBadge: function() {
-        console.log('ping!');
+        var hometab = this.getHomeTabButton(),
+            badgenumber = parseInt(hometab.getBadgeText()),
+            nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
+
+        hometab.setBadgeText(nextnumber);
     }
 
 });
