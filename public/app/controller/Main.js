@@ -3,7 +3,7 @@ Ext.define('ToolbarDemo.controller.Main', {
 
     config: {
         routes: {
-            'card/:index': 'showCard'
+            ':slug': 'showCard'
         },
         refs: {
             mainPanel: 'mainview',
@@ -37,18 +37,15 @@ Ext.define('ToolbarDemo.controller.Main', {
         hometab.setBadgeText(nextnumber);
     },
 
-    showCard: function(index) {
-        this.getMainPanel().setActiveItem(parseInt(index))
+    showCard: function(slug) {
+        var selector = 'container[title='+slug+']',
+            target = Ext.ComponentQuery.query(selector)[0];
+
+        this.getMainPanel().setActiveItem(target.id);
     },
 
     changeTab: function(button, event, object) {
-        addresses = {
-            home:    0,
-            search:  1,
-            action:  2,
-        }
-        index = addresses[button.getTitle()];
-        window.location.hash = "#card/" + index;
+        window.location.hash = "#" + button.getTitle();
     }
 
 });
