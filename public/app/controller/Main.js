@@ -2,6 +2,9 @@ Ext.define('ToolbarDemo.controller.Main', {
     extend: 'Ext.app.Controller',
 
     config: {
+        routes: {
+            'card/:index': 'showCard'
+        },
         refs: {
             mainPanel: 'mainview',
             tabButtons: 'mainview tabbar[docked=bottom] button',
@@ -29,6 +32,10 @@ Ext.define('ToolbarDemo.controller.Main', {
             nextnumber = isNaN(badgenumber) ? 1 : badgenumber+1;
 
         hometab.setBadgeText(nextnumber);
+    },
+
+    showCard: function(index) {
+        this.getMainPanel().setActiveItem(parseInt(index))
     }
 
 });
