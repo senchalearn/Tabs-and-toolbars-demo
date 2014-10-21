@@ -40,6 +40,8 @@ You can try out the demo here:
 
 * [http://senchalearn.github.com/Tabs-and-toolbars-demo/][t]
 
+![link QR code](http://qrcode.kaywa.com/img.php?s=5&d=http%3A%2F%2Fsenchalearn.github.com%2FTabs-and-toolbars-demo%2F)
+
 [t]: http://senchalearn.github.com/Tabs-and-toolbars-demo/
 
 [00]: https://github.com/senchalearn/Tabs-and-toolbars-demo/tree/00_blank_slate
